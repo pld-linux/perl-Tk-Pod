@@ -5,11 +5,11 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Tk
 %define		pnam	Pod
-Summary:	Tk::Pod Perl module - Pod browser toplevel widget
-Summary(pl):	Modu³ Perla Tk::Pod - widget do przegl±dania Pod
+Summary:	Tk::Pod - Pod browser toplevel widget
+Summary(pl):	Tk::Pod - widget do przegl±dania Pod
 Name:		perl-Tk-Pod
 Version:	0.9929
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -54,6 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%attr(755,root,root) %{_bindir}/tkpod
+%attr(755,root,root) %{_bindir}/tk*
 %{perl_vendorlib}/%{pdir}/*
 %{_mandir}/man[13]/*
