@@ -10,12 +10,12 @@ License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	752c7ad68f9e96306a3269f933021c3a
-BuildRequires:	perl-devel >= 5.6
-BuildRequires:	perl-Tk
-BuildRequires:	rpm-perlprov
-BuildRequires:	perl-Tk-HistEntry
 BuildRequires:	perl-Pod-Simple
+BuildRequires:	perl-Tk
+BuildRequires:	perl-Tk-HistEntry
+BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perlindex
+BuildRequires:	rpm-perlprov
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
