@@ -1,3 +1,7 @@
+#
+# Conditional build:
+# _with_tests - perform "make test" (requires working $DISPLAY)
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Tk
 %define		pnam	Pod
@@ -20,19 +24,22 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Tk::HTML Perl module is a simple Pod browser with hypertext
+Tk::Pod Perl module is a simple Pod browser with hypertext
 capabilities in a "Toplevel" widget.
 
 %description -l pl
-Modu³ Perla Tk::HTML jest prost± przegl±dark± Pod z obs³ug±
+Modu³ Perla Tk::Pod jest prost± przegl±dark± Pod z obs³ug±
 hypertekstu, dzia³aj±c± jako widget "Toplevel".
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor
 %{__make}
+
+%{?_with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -47,5 +54,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README
 %attr(755,root,root) %{_bindir}/tkpod
-%{perl_sitelib}/Tk/*
+%{perl_vendorlib}/Tk/*
 %{_mandir}/man[13]/*
