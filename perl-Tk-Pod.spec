@@ -3,8 +3,8 @@
 %bcond_with	tests	# perform "make test" (requires working $DISPLAY)
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Tk
-%define		pnam	Pod
+%define	pdir	Tk
+%define	pnam	Pod
 Summary:	Tk::Pod Perl module - Pod browser toplevel widget
 Summary(pl):	Modu³ Perla Tk::Pod - widget do przegl±dania Pod
 Name:		perl-Tk-Pod
