@@ -1,15 +1,15 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Tk
 %define		pnam	Pod
-Summary:	Tk::Pod Perl module
-Summary(pl):	Modu³ Perla Tk::Pod
+Summary:	Tk::Pod Perl module - Pod browser toplevel widget
+Summary(pl):	Modu³ Perla Tk::Pod - widget do przegl±dania Pod
 Name:		perl-Tk-Pod
 Version:	0.9920
 Release:	2
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	ce3ef504ebcddf078f0a8c8eeb68a1b5
+# Source0-md5:	752c7ad68f9e96306a3269f933021c3a
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perl-Tk
 BuildRequires:	rpm-perlprov
@@ -20,10 +20,12 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Tk::HTML Perl module.
+Tk::HTML Perl module is a simple Pod browser with hypertext
+capabilities in a "Toplevel" widget.
 
 %description -l pl
-Modu³ Perla Tk::HTML.
+Modu³ Perla Tk::HTML jest prost± przegl±dark± Pod z obs³ug±
+hypertekstu, dzia³aj±c± jako widget "Toplevel".
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
