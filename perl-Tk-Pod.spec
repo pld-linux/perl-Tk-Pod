@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _with_tests - perform "make test" (requires working $DISPLAY)
+%bcond_with	tests	# perform "make test" (requires working $DISPLAY)
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Tk
@@ -8,16 +8,17 @@
 Summary:	Tk::Pod Perl module - Pod browser toplevel widget
 Summary(pl):	Modu³ Perla Tk::Pod - widget do przegl±dania Pod
 Name:		perl-Tk-Pod
-Version:	0.9920
-Release:	2
-License:	unknown
+Version:	0.9922
+Release:	1
+# same as perl
+License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	752c7ad68f9e96306a3269f933021c3a
+# Source0-md5:	f28d9603f38585d0d8b763253f69c3a8
 BuildRequires:	perl-Pod-Simple
 BuildRequires:	perl-Tk
 BuildRequires:	perl-Tk-HistEntry
-BuildRequires:	perl-devel >= 5.6
+BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	perlindex
 BuildRequires:	rpm-perlprov
 BuildArch:	noarch
@@ -39,7 +40,7 @@ hypertekstu, dzia³aj±c± jako widget "Toplevel".
 	INSTALLDIRS=vendor
 %{__make}
 
-%{?_with_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
