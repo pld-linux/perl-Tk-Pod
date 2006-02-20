@@ -8,13 +8,13 @@
 Summary:	Tk::Pod - Pod browser toplevel widget
 Summary(pl):	Tk::Pod - widget do przegl±dania Pod
 Name:		perl-Tk-Pod
-Version:	0.9929
-Release:	2
+Version:	0.9932
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	4f39a0868d40ca3aaf9fd52d5cfc61ed
+# Source0-md5:	c2e9056a471834c55011e0ed3982626c
 BuildRequires:	perl-Pod-Simple
 BuildRequires:	perl-Tk
 BuildRequires:	perl-Tk-HistEntry
