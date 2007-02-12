@@ -6,7 +6,7 @@
 %define		pdir	Tk
 %define		pnam	Pod
 Summary:	Tk::Pod - Pod browser toplevel widget
-Summary(pl):	Tk::Pod - widget do przegl±dania Pod
+Summary(pl.UTF-8):   Tk::Pod - widget do przeglÄ…dania Pod
 Name:		perl-Tk-Pod
 Version:	0.9932
 Release:	1
@@ -28,9 +28,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Tk::Pod Perl module is a simple Pod browser with hypertext
 capabilities in a "Toplevel" widget.
 
-%description -l pl
-Modu³ Perla Tk::Pod jest prost± przegl±dark± Pod z obs³ug±
-hypertekstu, dzia³aj±c± jako widget "Toplevel".
+%description -l pl.UTF-8
+ModuÅ‚ Perla Tk::Pod jest prostÄ… przeglÄ…darkÄ… Pod z obsÅ‚ugÄ…
+hypertekstu, dziaÅ‚ajÄ…cÄ… jako widget "Toplevel".
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
