@@ -6,7 +6,7 @@
 %define		pdir	Tk
 %define		pnam	Pod
 Summary:	Tk::Pod - Pod browser toplevel widget
-Summary(pl.UTF-8):   Tk::Pod - widget do przeglądania Pod
+Summary(pl.UTF-8):	Tk::Pod - widget do przeglądania Pod
 Name:		perl-Tk-Pod
 Version:	0.9932
 Release:	1
