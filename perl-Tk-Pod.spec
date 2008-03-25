@@ -13,8 +13,9 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Tk/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	6a378238e8cdf7f01c7a019da713a07e
+URL:		http://search.cpan.org/dist/Tk-Pod/
 BuildRequires:	perl-Pod-Simple
 BuildRequires:	perl-Tk
 BuildRequires:	perl-Tk-HistEntry
@@ -55,5 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README
 %attr(755,root,root) %{_bindir}/tk*
-%{perl_vendorlib}/%{pdir}/*
+%{perl_vendorlib}/Tk/*
 %{_mandir}/man[13]/*
