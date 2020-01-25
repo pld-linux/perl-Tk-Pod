@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_with	tests	# perform "make test" (requires working $DISPLAY)
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Tk
 %define		pnam	Pod
 Summary:	Tk::Pod - Pod browser toplevel widget
