@@ -8,7 +8,7 @@ Summary:	Tk::Pod - Pod browser toplevel widget
 Summary(pl.UTF-8):	Tk::Pod - widget do przeglądania Pod
 Name:		perl-Tk-Pod
 Version:	0.9939
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
